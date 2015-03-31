@@ -8,7 +8,26 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>The parent pom holds all the necessary
-        version and configuration information for submodules.</description>
+        version and configuration information for submodules.</description>    
+  <scm> 
+    <url>scm:git:https://github.com/jassuncao/sample-maven-structure.git</url>
+    <connection>scm:git:https://github.com/jassuncao/sample-maven-structure.git</connection>
+    <developerConnection>scm:git:https://github.com/jassuncao/sample-maven-structure.git</developerConnection>     
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>exploit_releases</id>
+      <name>ExploitSys Releases Repo</name>
+      <uniqueVersion>false</uniqueVersion>
+      <url>http://nexus.exploitsys.com/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>exploit_snapshots</id>
+      <name>ExploitSys Snapshots Repo</name>
+      <uniqueVersion>true</uniqueVersion>
+      <url>http://nexus.exploitsys.com/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
     <dependencyManagement>
         <dependencies>
             <dependency>
