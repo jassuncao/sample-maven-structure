@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>The parent pom holds all the necessary
         version and configuration information for submodules.</description>    
@@ -11,7 +11,6 @@
     <url>scm:git:https://github.com/jassuncao/sample-maven-structure.git</url>
     <connection>scm:git:git@github.com:jassuncao/sample-maven-structure.git</connection>
     <developerConnection>scm:git:git@github.com:jassuncao/sample-maven-structure.git</developerConnection>     
-    <tag>sample-maven-structure-1.0</tag>
   </scm>
   <distributionManagement>
     <repository>
@@ -32,12 +31,12 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>module-a</artifactId>
-                <version>1.0</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>module-b</artifactId>
-                <version>1.0</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>commons-cli</groupId>
