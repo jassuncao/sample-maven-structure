@@ -4,7 +4,7 @@
     <parent>
         <artifactId>parent</artifactId>
         <groupId>com.example</groupId>
-        <version>1.0</version>
+        <version>1.1</version>
         <relativePath>../parent</relativePath>
     </parent>
     <artifactId>module-b</artifactId>
@@ -13,19 +13,7 @@
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>module-a</artifactId>
+	    <version>1.0</version>
         </dependency>
     </dependencies>
-    <build>
-      <plugins>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-release-plugin</artifactId>
-          <version>2.5.1</version>
-          <configuration>
-              <pomFileName>parent/pom.xml</pomFileName>
-              <pushChanges>false</pushChanges>
-            </configuration>          
-        </plugin>
-      </plugins>
-    </build>
 </project>
