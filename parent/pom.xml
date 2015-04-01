@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>parent</artifactId>
-    <version>1.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <description>The parent pom holds all the necessary
         version and configuration information for submodules.</description>    
@@ -31,12 +31,12 @@
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>module-a</artifactId>
-                <version>1.0</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.example</groupId>
                 <artifactId>module-b</artifactId>
-                <version>1.0</version>
+                <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>commons-cli</groupId>
@@ -61,7 +61,7 @@
             <goal>perform</goal>
             </goals>
             <configuration>
-              <pomFileName>sample-maven-structure/parent/pom.xml</pomFileName>
+              <pomFileName>parent/pom.xml</pomFileName>
             </configuration>
             </execution>
           </executions>
