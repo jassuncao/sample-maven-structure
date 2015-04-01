@@ -16,4 +16,18 @@
             <artifactId>module-a</artifactId>
         </dependency>
     </dependencies>
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.1</version>
+          <configuration>
+              <pomFileName>parent/pom.xml</pomFileName>
+              <pushChanges>false</pushChanges>
+            </configuration>          
+        </plugin>
+      </plugins>
+    </build>
+
 </project>
