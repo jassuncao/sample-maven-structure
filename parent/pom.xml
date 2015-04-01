@@ -11,8 +11,8 @@
         version and configuration information for submodules.</description>    
   <scm> 
     <url>scm:git:https://github.com/jassuncao/sample-maven-structure.git</url>
-    <connection>scm:git:https://github.com/jassuncao/sample-maven-structure.git</connection>
-    <developerConnection>scm:git:https://github.com/jassuncao/sample-maven-structure.git</developerConnection>     
+    <connection>scm:git:git@github.com:jassuncao/sample-maven-structure.git</connection>
+    <developerConnection>scm:git:git@github.com:jassuncao/sample-maven-structure.git</developerConnection>     
   </scm>
   <distributionManagement>
     <repository>
